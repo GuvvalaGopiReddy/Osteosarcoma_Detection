@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container pt-5">
+    <h1 class="text-center" style="color: #8CE17D;">Bone Tumor Prediction Result using Vgg16 and Resnet</h1>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <!-- VGG16 Section -->
+        <div class="col-md-6">
+            <h2 class="text-center">VGG16</h2>
+            <div class="text-center">
+                <img src="static/images/vgg16cm.png" alt="VGG16 Confusion Matrix" class="img-fluid" style="border-radius: 10px;">
+                <p class="pt-2">Confusion Matrix: VGG16</p>
+            </div>
+            <div class="text-center">
+                <img src="static/images/vgg16graph.png" alt="VGG16 Accuracy Graph" class="img-fluid" style="border-radius: 10px;">
+                <p class="pt-2">Accuracy Graph: VGG16</p>
+            </div>
+        </div>
+
+        <!-- ResNet50 Section -->
+        <div class="col-md-6">
+            <h2 class="text-center">ResNet50</h2>
+            <div class="text-center">
+                <img src="static/images/resnetcm.png" alt="ResNet50 Confusion Matrix" class="img-fluid" style="border-radius: 10px;">
+                <p class="pt-2">Confusion Matrix: ResNet50</p>
+            </div>
+            <div class="text-center">
+                <img src="static/images/resnetgraph.png" alt="ResNet50 Accuracy Graph" class="img-fluid" style="border-radius: 10px;">
+                <p class="pt-2">Accuracy Graph: ResNet50</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+{% endblock %}

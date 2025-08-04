@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container pt-5">
+    <h1 class="text-center" style="color: #8CE17D;">Bone Tumor Prediction Algorithms</h1>
+    <p class="text-center pt-3">
+        Leverage state-of-the-art deep learning algorithms like VGG16 and ResNet50 to predict bone tumors with high
+        accuracy and confidence.
+    </p>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">VGG16</h2>
+            <img src="static/images/vgg16.png" alt="VGG16 Illustration" class="img-fluid" style="border-radius: 10px;">
+            <p class="pt-3">
+                VGG16 is a convolutional neural network model known for its deep architecture and performance in image
+                classification tasks. It is used to extract features from medical images for accurate tumor detection.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="text-center">ResNet50</h2>
+            <img src="static/images/resnet.jpg" alt="ResNet50 Illustration" class="img-fluid" style="border-radius: 10px;">
+            <p class="pt-3">
+                ResNet50 is a residual network model that addresses the vanishing gradient problem in deep networks.
+                Its robust architecture ensures precise tumor identification and classification in bone images.
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+<br>
+<br>
+
+{% endblock %}
